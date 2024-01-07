@@ -1,2 +1,2 @@
 # IoT-Projekt
-Gruppe 09: Asli Zeray, Salim Doumbia, Roman Leu
+Von Gruppe 09: Asli Zeray, Salim Doumbia, Roman Leu
