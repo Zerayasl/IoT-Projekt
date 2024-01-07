@@ -30,4 +30,4 @@ Anwendung starten: Öffnen Sie einen weiteren Terminal und aktivieren Sie die er
 ## Autostart on boot
 $ sudo systemctl enable nodered.service
 
-To Disable the Service $ sudo systemctl disable nodered.service
+To Disable the Service: $ sudo systemctl disable nodered.service
