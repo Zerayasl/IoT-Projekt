@@ -50,6 +50,6 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
    - $ sh setup.sh
    - $ python3 classify.py
 
-## Weitere allg. Infos: Autostart on boot
-- $ sudo systemctl enable nodered.service
+## Weitere allg. Infos 
+- Autostart on boot: $ sudo systemctl enable nodered.service
 - To Disable the Service: $ sudo systemctl disable nodered.service
