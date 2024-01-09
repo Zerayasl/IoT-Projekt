@@ -32,18 +32,19 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
 5. LTS Version, Node.js und npm installieren
    - $ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
-## WICHTIGE INFO !!!
+## !! WICHTIGE INFO !!
 1. Node-Red starten: Nach der Installation können Sie den Befehl node-red verwenden, um Node-RED in Ihrem Terminal zu starten. Nicht note-red-start !
    - $ node-red
    - Unsere erstellten Flows befinden sich im Github Repository: Flow 1.html & style.html
 
 2.  Die Iconpfade im Classify.py Code anpassen!
    - Die Bilder und Code befinden sich im Repository.
-   - So sieht der Pfad ab der Zeile 126 im Classify.py aus:
+   - So sieht der Pfad ab der Zeile 126 im Classify.py aus:<br>
 
-*sun_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconsonne.jpg'*
-*cloud_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconwolke.jpg'*
-*snow_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconschnee.jpg'*
+> *Iconpfad*<br>
+> *sun_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconsonne.jpg'*<br>
+> *cloud_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconwolke.jpg'*<br>
+> *snow_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconschnee.jpg'*
      
 2. Anwendung starten: Öffnen Sie einen weiteren Terminal und aktivieren Sie die erstellte virtuelle Umgebung. Dann können Sie auf den folgenden Pfad und den Classify.py starten.
    - $ cd ~/examples/lite/examples/image_classification/raspberry_pi/
