@@ -5,20 +5,21 @@ von Gruppe 09: Asli Zeray, Salim Doumbia, Roman Leu
 Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetterdaten, um sicherzustellen, dass man stets angemessen für das Wetter gekleidet ist. Dies vereinfacht Morgenroutine, indem er einen schnellen Rat gibt, ohne dass man selbst das Wetter prüfen muss. Die Anwendung verwendet eine Kamera, ein Image-Classification-Modell und ein Node-RED-Dashboard, um die erkannte Kleidung sowie aktuelle Wetterinformationen anzuzeigen. In seiner Einfachheit zeigt er, wie IoT-Geräte spezifische, alltägliche Probleme mit einer smarten Lösung adressieren können.
 
 ## !! WICHTIGE INFO !!
-1. Node-RED starten: Nach der Installation DES Node-REDs können Sie den Befehl node-red verwenden, um Node-RED in Ihrem Terminal zu starten. Nicht note-red-start !
+1. Node-RED starten: Nach der Installation des Node-RED können Sie den Befehl node-red verwenden, um Node-RED in Ihrem Terminal zu starten. Nicht note-red-start !
    - $ node-red
-   - Unsere erstellten Flows befinden sich im Github Repository: Flow 1.html & style.html
 
-2.  Die Iconpfade im Classify.py Code anpassen!
-   - Die Bilder und Code befinden sich im Repository.
-   - So sieht der Pfad ab der Zeile 126 im Classify.py aus:<br>
+2. Bitte den HttpStatic-Pfad im File *Settings.js* des *.node-red* Ordners anpassen:<br>
+- Zur Info: Bei uns ist *.node-red* hier abgelegt: /home/pi/.node-red<br>
+> httpStatic: '/home/pi/.node-red/image/',
+
+3. Die Iconpfade im Classify.py Code anpassen! Die Bilder und Code befinden sich im Repository. So sieht der Pfad ab der Zeile 126 im Classify.py aus:<br>
 
 > *Iconpfad*<br>
 > *sun_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconsonne.jpg'*<br>
 > *cloud_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconwolke.jpg'*<br>
 > *snow_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconschnee.jpg'*
 
-3. Anwendung starten: Öffnen Sie einen weiteren Terminal und aktivieren Sie die erstellte virtuelle Umgebung. Dann können Sie auf den folgenden Pfad und den Classify.py starten.
+4. Anwendung starten: Öffnen Sie einen weiteren Terminal und aktivieren Sie die erstellte virtuelle Umgebung. Dann können Sie auf den folgenden Pfad und den Classify.py starten.
    - $ cd ~/examples/lite/examples/image_classification/raspberry_pi/
    - $ sh setup.sh
    - $ python3 classify.py
@@ -42,16 +43,18 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
 3. Abhängigkeiten installieren: Führe das Skript zur Installation der erforderlichen Abhängigkeiten aus. Dies kann beispielsweise OpenCV, TensorFlow und andere Python-Bibliotheken umfassen.
    - $ pip install -r requirements.txt
 
-4. Node-RED einrichten: Konfiguriere Node-RED auf deinem Raspberry Pi und importiere das bereitgestellte Flow-Skript für das Dashboard.
-   - Node-RED: v3.1.3
-   - Node.js: v20.10.0
-   - npm: 10.2.3
+4. Node-RED einrichten: Konfiguriere Node-RED auf deinem Raspberry Pi und importiere das bereitgestellte Flow-Skript für das Dashboard.<br>
+
+> Node-RED: v3.1.3<br>
+> Node.js: v20.10.0<br>
+> npm: 10.2.3<br>
+   
    - $ npm install -g --unsafe-perm node-red
 
-5. LTS Version, Node.js und npm installieren
-   - $ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
-   - Autostart on boot: $ sudo systemctl enable nodered.service
-   - To Disable the Service: $ sudo systemctl disable nodered.service
+6. LTS Version, Node.js und npm installieren
+   - $ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)<br>
+> Autostart on boot: $ sudo systemctl enable nodered.service  
+> To Disable the Service: $ sudo systemctl disable nodered.service<br>
 
 ## Weitere allg. Infos 
 - Wenn die API Keys nicht funktionieren, kann man diese unter folgenden Seiten erstellen:
