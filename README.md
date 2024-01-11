@@ -4,7 +4,7 @@ von Gruppe 09: Asli Zeray, Salim Doumbia, Roman Leu
 ## Einleitung
 Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetterdaten, um sicherzustellen, dass man stets angemessen für das Wetter gekleidet ist. Dies vereinfacht Morgenroutine, indem er einen schnellen Rat gibt, ohne dass man selbst das Wetter prüfen muss. Die Anwendung verwendet eine Kamera, ein Image-Classification-Modell und ein Node-RED-Dashboard, um die erkannte Kleidung sowie aktuelle Wetterinformationen anzuzeigen. In seiner Einfachheit zeigt er, wie IoT-Geräte spezifische, alltägliche Probleme mit einer smarten Lösung adressieren können.
 
-## !! WICHTIGE INFO !!
+## !! WICHTIGE Anpassungen !!
 1. Node-RED starten: Nach der Installation des Node-RED können Sie den Befehl node-red verwenden, um Node-RED in Ihrem Terminal zu starten. Nicht note-red-start !
    - $ node-red
 
@@ -12,7 +12,7 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
 - Zur Info: Bei uns ist *.node-red* hier abgelegt: /home/pi/.node-red<br>
 > httpStatic: '/home/pi/.node-red/image/',
 
-3. Die Iconpfade im Classify.py Code anpassen! Die Bilder und Code befinden sich im Repository. So sieht der Pfad ab der Zeile 126 im Classify.py aus:<br>
+3. Die Iconpfade im Classify.py Code anpassen! So sieht der Pfad ab der Zeile 126 im Classify.py aus:<br>
 
 > *Iconpfad*<br>
 > *sun_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconsonne.jpg'*<br>
@@ -23,6 +23,13 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
    - $ cd ~/examples/lite/examples/image_classification/raspberry_pi/
    - $ sh setup.sh
    - $ python3 classify.py
+
+## Ergänzende Info über die Dateien/Dokumente
+- Im Node-RED-Dateien befinden sich die Flows.
+- Im Video-Datei befindet sich das Projektvideo.
+- Im Image-Datei befindet sich der Snapshot in JPG-Format.
+- Die restlichen Dateien gehören zum Code Classify.py.
+
   
 ## Allg. Info über die Funktionen
 - Kleidererkennung: Die Kamera erfasst Bilder der getragenen Kleidung, und ein Image-Classification-Modell analysiert die Bilder, um die Art der Kleidung zu identifizieren.
