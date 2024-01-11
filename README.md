@@ -17,8 +17,8 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
 > *sun_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconsonne.jpg'*<br>
 > *cloud_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconwolke.jpg'*<br>
 > *snow_icon_path = '/home/pi/examples/lite/examples/image_classification/raspberry_pi/iconschnee.jpg'*
-     
-2. Anwendung starten: Öffnen Sie einen weiteren Terminal und aktivieren Sie die erstellte virtuelle Umgebung. Dann können Sie auf den folgenden Pfad und den Classify.py starten.
+
+3. Anwendung starten: Öffnen Sie einen weiteren Terminal und aktivieren Sie die erstellte virtuelle Umgebung. Dann können Sie auf den folgenden Pfad und den Classify.py starten.
    - $ cd ~/examples/lite/examples/image_classification/raspberry_pi/
    - $ sh setup.sh
    - $ python3 classify.py
@@ -50,7 +50,10 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
 
 5. LTS Version, Node.js und npm installieren
    - $ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+   - Autostart on boot: $ sudo systemctl enable nodered.service
+   - To Disable the Service: $ sudo systemctl disable nodered.service
 
 ## Weitere allg. Infos 
-- Autostart on boot: $ sudo systemctl enable nodered.service
-- To Disable the Service: $ sudo systemctl disable nodered.service
+- Wenn die API Keys nicht funktionieren, kann man diese unter folgenden Seiten erstellen:
+   - Wettersanzeige im Classify.py: *api.open-meteo.com*
+   - Wetteranzeige im Node-RED: *https://home.openweathermap.org*
