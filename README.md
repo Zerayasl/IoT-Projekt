@@ -55,5 +55,5 @@ Dieses Raspberry Pi-Projekt als Smart-Mirror kombiniert Bilderkennung und Wetter
 
 ## Weitere allg. Infos 
 - Wenn die API Keys nicht funktionieren, kann man diese unter folgenden Seiten erstellen:
-   - Wettersanzeige im Classify.py: *open-meteo.com*
+   - Wettersanzeige im Classify.py: *https://open-meteo.com*
    - Wetteranzeige im Node-RED: *https://home.openweathermap.org*
